@@ -14,6 +14,7 @@ import vendormachine.users.util.Wallet;
 
 // Example 100% Person Test Coverage
 // add @Ignore above class to help WalletTest.java
+@Ignore
 public class PersonTEST {
 	
 	// Resources

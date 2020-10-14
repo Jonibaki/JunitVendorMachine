@@ -47,7 +47,7 @@ public class DrinkVendingMachine {
             if(this.availableCredit < selection.cost()){
                 //TODO replace with Log4j
                 System.out.println("WARNING: you do not have enough credit!");
-                System.out.println("WARNING: machine credit - Â£" + this.availableCredit);
+                System.out.println("WARNING: machine credit - £" + this.availableCredit);
                 return null;
             }
             else {
@@ -69,13 +69,21 @@ public class DrinkVendingMachine {
         this.availableCredit += user.getCredit(credit);
     }
 
-    //===============================
-    //===  'get'ors
-    //===============================
+    public float getAvailableCredit() {
+        return availableCredit;
+    }
 
+    public void setAvailableCredit(float availableCredit) {
+        this.availableCredit = availableCredit;
+    }
 
-    //===============================
-    //===  'set'ors
-    //===============================
+    public ArrayList<Snack> getDrinkList() {
+        return drinkList;
+    }
+
+    public void setDrinkList(ArrayList<Snack> drinkList) {
+        this.drinkList = drinkList;
+    }
+
 
 }

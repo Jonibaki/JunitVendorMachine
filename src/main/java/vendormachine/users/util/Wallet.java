@@ -1,10 +1,13 @@
 package vendormachine.users.util;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Wallet {
 
     private String brand = "Generic";
     private float storedCredit = 0.5f; // using f after a decimal value treats it the as a float(rather than a double)
-
+//    public List<Float> storesCreditList = new ArrayList<Float>();
     public Wallet(){}
 
     public Wallet(float startCredit){
@@ -46,8 +49,11 @@ public class Wallet {
     public float getAllCredit(){
         return this.storedCredit;
     }
+//    public List<Float> getAllCredits(){
+//        return this.storesCreditList;
+//    }
 
-    public String getBrand(String band) {
+    public String getBrand() {
         return this.brand;
     }
 
