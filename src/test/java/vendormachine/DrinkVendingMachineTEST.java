@@ -40,7 +40,6 @@ public class DrinkVendingMachineTEST {
 		Snack  newSnack = drinkList.get(selectionId);
 		assertEquals(snack, newSnack);
 
-
 	}
 	@Test
 	public void populateDrinkListTest() {
